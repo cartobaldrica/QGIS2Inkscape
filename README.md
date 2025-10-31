@@ -13,7 +13,7 @@ An Inkscape extension for formatting SVG exports from QGIS. Typicaly, SVG export
 * Create a map in QGIS! 
 * Create a layout using your QGIS map.
 * Once your layout has been created, select "Export Map as SVG"
-* In the "SVG Export Optiosn" window, select the following settings. 
+* In the "SVG Export Options" window, select the following settings. 
     * [✔️] Export map layers as SVG Groups
     * [✔️] Always export as vectors (select this even if you raster layers)
     * [✔️] Export RDF Medata
