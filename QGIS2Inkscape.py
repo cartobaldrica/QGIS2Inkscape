@@ -312,7 +312,7 @@ class QGIS2Inkscape(inkex.EffectExtension):
         #SORT BY STYLE
         for group in groups:
             styles = []
-            colorGroup = []
+            styleGroup = []
             #create list of styles
             for child in group.getchildren():
                 style = child.style
@@ -321,14 +321,40 @@ class QGIS2Inkscape(inkex.EffectExtension):
                     groupNum = len(styles)
                     groupName = "Group" + str(groupNum)
                     newGroup = group.add(Group.new(groupName))
-                    colorGroup.append(newGroup)
+                    #group styles as layers so individual elements can be accessed
+                    newGroup.set('inkscape:groupmode','layer')
+                    styleGroup.append(newGroup)
             #move children to styles
             for child in group.getchildren():
                 if child.tag_name != 'g':
                     style = child.style
+                    #for text elements, set id to text content
+                    if child.tag_name == 'text':
+                        child.set('id',child.get_text())
                     if style in styles:
                         f = styles.index(style)
-                        colorGroup[f].add(child)
-        
+                        styleGroup[f].add(child)
+            #check differences between styles
+            for i, style in enumerate(styles):
+                length = len(styles) - 1
+                #compare styles to one another
+                if i < length:
+                    l1 = list(styles[i].items())
+                    l2 = list(styles[i+1].items())
+                    unique_to_style = [item for item in l1 if item not in l2]
+                    #set the differences in style to the group label
+                    styleGroup[i].set('id',','.join(map(str,unique_to_style)))
+                    styleGroup[i].set('inkscape:label',','.join(map(str,unique_to_style)))
+                else: 
+                    l1 = list(styles[i].items())
+                    l2 = list(styles[i-1].items())
+                    unique_to_style = [item for item in l1 if item not in l2]
+                    #set the differences in style to the group label
+                    styleGroup[i].set('id',','.join(map(str,unique_to_style)))
+                    styleGroup[i].set('inkscape:label',','.join(map(str,unique_to_style)))
+            #for layers with only one style, collapse into a single group
+            if len(styles) == 1:
+                self._ungroup(styleGroup[0])
+         
 if __name__ == '__main__':
     QGIS2Inkscape().run()
