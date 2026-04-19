@@ -1,6 +1,8 @@
 # QGIS2Inkscape
 An Inkscape extension for formatting SVG exports from QGIS. Typically, SVG exports are filled with empty layers and ungrouped styles. This extension is designed to improve ease of use for QGIS to Inkscape workflows.
 
+
+
 ### Why QGIS + Inkscape?
 
 For a fully free and open-source (FOSS) cartographic workflow! Unburden yourself from proprietary headaches—no more always-online desktop applications, expensive subscriptions, high compute requirements, or pesky proprietary formats (i.e. not more .AIX). No more untimely crashes (just kidding! but at least you'll be crashing for free). Neither QGIS or Inkscape are perfect, and both definitely contain some FOSS jankiness, but combined they can enable the creation of professional quality cartography. 
@@ -47,6 +49,9 @@ __Rename__ label layers in the layers panel with their text content.
 ### FAQ
 __I have a raster layer, will cause any problems?__
 Nope! A raster image will export without issue.
+
+
+
 
 Copyright 2025 CartoBaldrica
 
