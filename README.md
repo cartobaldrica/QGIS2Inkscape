@@ -50,6 +50,9 @@ __Rename__ label layers in the layers panel with their text content.
 __I have a raster layer, will that cause any problems?__
 Nope! A raster image will export without issue.
 
+__Where can I put my QGIS2Inkscape feature ideas?__
+Create a "new issue" on Github! I'll get to it (eventually). If it's out of scope, I'll try to recommend alternatives.
+
 <br>
 
 ***
