@@ -59,7 +59,7 @@ Create a "new issue" on Github! I'll get to it (eventually). If it's out of scop
 
 ### License
 
-# Copyright (C) 2025 CartoBaldrica
+Copyright (C) 2025 CartoBaldrica
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version.
 
