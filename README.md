@@ -1,8 +1,6 @@
 # QGIS2Inkscape
 An Inkscape extension for formatting SVG exports from QGIS. Typically, SVG exports are filled with empty layers and ungrouped styles. This extension is designed to improve ease of use for QGIS to Inkscape workflows.
 
-
-
 ### Why QGIS + Inkscape?
 
 For a fully free and open-source (FOSS) cartographic workflow! Unburden yourself from proprietary headaches—no more always-online desktop applications, expensive subscriptions, high compute requirements, or pesky proprietary formats (i.e. .AIX, yuck!). No more untimely crashes (just kidding! but at least you'll be crashing for free). Neither QGIS or Inkscape are perfect, both contain some FOSS jankiness, but combined they enable the creation of professional quality cartography. 
@@ -12,7 +10,7 @@ For a fully free and open-source (FOSS) cartographic workflow! Unburden yourself
 
 ### Why SVG?
 
-Scalable Vector Graphics (SVG) is an open-source vector-graphics format developed by the World Wide Web Consortium (W3C). SVGs can be embedded natively into websites, or exported from Inkscape as images. 
+Scalable Vector Graphics (SVG) is an open-source vector-graphics format developed by the World Wide Web Consortium (W3C). SVGs can be embedded natively into websites, or exported from Inkscape as images. Most importantly, since SVG is open-source, it can be used across vector-graphics editing software. While SVG is the native format for Inkscape, if you needed to (and I mean _really_ needed to) make further edits using Illustrator or Affinity Designer, you could!
 
 ### QGIS2Inkscape Features
 When you run the extension on an SVG layout from QGIS, it will do the following:
