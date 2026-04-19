@@ -1,6 +1,8 @@
 # QGIS2Inkscape
 An Inkscape extension for formatting SVG exports from QGIS. Typically, SVG exports are filled with empty layers and ungrouped styles. This extension is designed to improve ease of use for QGIS to Inkscape workflows.
 
+This extension contains source code from the ["Remove Empty Groups"](https://inkscape.org/~MarioVoigt/%E2%98%85remove-empty-groups) extension and the ["Deep Ungroup"](https://github.com/rebatov/deep-ungroup-inkscape?tab=MIT-1-ov-file) extension.
+
 ### Why QGIS + Inkscape?
 
 For a fully free and open-source (FOSS) cartographic workflow! Unburden yourself from proprietary headaches—no more always-online desktop applications, expensive subscriptions, high compute requirements, or pesky proprietary formats (i.e. .AIX, yuck!). No more untimely crashes (just kidding! but at least you'll be crashing for free). Neither QGIS or Inkscape are perfect, but combined they enable the creation of professional quality cartography. 
@@ -57,9 +59,9 @@ Create a "new issue" on Github! I'll get to it (eventually). If it's out of scop
 
 ### License
 
-Copyright 2025 CartoBaldrica
+# Copyright (C) 2025 CartoBaldrica
 
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 

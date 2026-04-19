@@ -1,11 +1,11 @@
 # coding=utf-8
 #
-# Copyright (C) 2025 Gareth Baldrica-Franklin, gbaldrica@pm.me
+# Copyright (C) 2025 CartoBaldrica
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
+# any later version.
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -17,12 +17,25 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 # This program includes source code from the Remove Empty Groups Extension (https://inkscape.org/~MarioVoigt/%E2%98%85remove-empty-groups)
-# created by Mario Voight in 2020, which is also licensed under a GNU General Public License, and
-# the Deep Ungroup extension, created by Github user jv-rebatov (https://github.com/rebatov/deep-ungroup-inkscape).
+# created by Mario Voight in 2020, which is also licensed under a GNU General Public License.
 #
-"""
-This extension formats SVG files exported from QGIS into layers based on common styles. 
-"""
+# This program also includes source code from the Deep Ungroup extension, created by Github user jv-rebatov (https://github.com/rebatov/deep-ungroup-inkscape),
+# which is licensed with the following: 
+# MIT License
+#
+# Copyright (c) 2025 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+#
+# This extension formats SVG files exported from QGIS into layers based on common styles. 
 
 import inkex
 from inkex import Transform, Style, Group
