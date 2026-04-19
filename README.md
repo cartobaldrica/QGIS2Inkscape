@@ -5,7 +5,7 @@ An Inkscape extension for formatting SVG exports from QGIS. Typically, SVG expor
 
 ### Why QGIS + Inkscape?
 
-For a fully free and open-source (FOSS) cartographic workflow! Unburden yourself from proprietary headaches—no more always-online desktop applications, expensive subscriptions, high compute requirements, or pesky proprietary formats (i.e. not more .AIX). No more untimely crashes (just kidding! but at least you'll be crashing for free). Neither QGIS or Inkscape are perfect, and both definitely contain some FOSS jankiness, but combined they can enable the creation of professional quality cartography. 
+For a fully free and open-source (FOSS) cartographic workflow! Unburden yourself from proprietary headaches—no more always-online desktop applications, expensive subscriptions, high compute requirements, or pesky proprietary formats (i.e. .AIX, yuck!). No more untimely crashes (just kidding! but at least you'll be crashing for free). Neither QGIS or Inkscape are perfect, and both definitely contain some FOSS jankiness, but combined they can enable the creation of professional quality cartography. 
 
 * Want to learn QGIS? Check out the official [training manual](https://docs.qgis.org/3.44/en/docs/training_manual/index.html). Learning QGIS from scratch? Check out the [Gentle Introduction to QGIS](https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/index.html).
 * Want to learn Inkscape? Check out the [official tutorials](https://inkscape.org/learn/tutorials/). There are also plenty of great how-to resources on YouTube. I hope to, at some point, produce a video walkthrough covering some basic cartographic practices in Inkscape.
