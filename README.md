@@ -47,11 +47,12 @@ __Rename__ label layers in the layers panel with their text content.
 6. Select and run the QGIS2Inkscape extension!
 
 ### FAQ
-__I have a raster layer, will cause any problems?__
+__I have a raster layer, will that cause any problems?__
 Nope! A raster image will export without issue.
 
+<br>
 
-
+***
 
 Copyright 2025 CartoBaldrica
 
