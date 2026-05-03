@@ -204,7 +204,10 @@ class QGIS2Inkscape(inkex.EffectExtension):
             for attr in inheritable_attrs:
                 attr_value = group_node.get(attr)
                 if attr_value and attr not in group_style:
-                    group_style[attr] = attr_value
+                    try:
+                        group_style[attr] = attr_value
+                    except:
+                        print("invalid style")
             
             group_transform = Transform(group_node.get("transform"))
             group_clippath = group_node.get("clip-path")
