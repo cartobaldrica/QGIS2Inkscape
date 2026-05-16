@@ -327,6 +327,7 @@ class QGIS2Inkscape(inkex.EffectExtension):
             rect.delete()
         #SORT BY STYLE
         for group in groups:
+            group.set('fill-rule','nonzero')
             styles = []
             styleGroup = []
             #create list of styles
@@ -339,6 +340,7 @@ class QGIS2Inkscape(inkex.EffectExtension):
                     newGroup = group.add(Group.new(groupName))
                     #group styles as layers so individual elements can be accessed
                     newGroup.set('inkscape:groupmode','layer')
+                    newGroup.set('fill-rule','nonzero')
                     styleGroup.append(newGroup)
             #move children to styles
             for child in group.getchildren():
